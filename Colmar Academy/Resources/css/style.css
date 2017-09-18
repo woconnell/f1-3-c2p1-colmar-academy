@@ -1,0 +1,453 @@
+body {
+  margin: 0px;
+  font-family: garamond;
+}
+
+/*Header*/
+.header-container {
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+}
+
+header .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 24px;
+  height: 64px;
+  background-color: white;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+
+.logo img {
+  display: inline-block;
+  height: 40px;
+  width: auto;
+}
+
+.logo h1 {
+  font-size: 32px;
+  color: hsl(360, 0%, 75%);
+}
+
+.logo h1 span{
+  font-weight: bold;
+  color: hsl(360, 0%, 50%);
+}
+
+.nav {
+  display: flex;
+  height: 64px;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  padding-left: 0;
+}
+
+.nav ul li {
+  display: inline-block;
+  margin: 0px;
+  }
+
+.nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  color: hsl(360, 0%, 50%);
+}
+.spacer {
+  width: 16px;
+}
+
+/*Main content*/
+.main-content {
+  position: relative;
+  top: 64px;
+  display: flex;
+  flex-flow: column;
+}
+
+@media only screen and (min-width: 481px) {
+  .left-box {
+    display: flex;
+    width: 60%;
+    padding: 32px 24px;
+    flex-flow: column;
+  }
+}
+
+.right-box {
+  display: flex;
+  width: 40%;
+  padding: 16px;
+  flex-flow: column;
+}
+
+/*Banner*/
+.banner {
+  display: flex;
+  background-color: hsl(360, 0%, 80%)
+}
+
+.banner .right-box {
+  margin-left: 24px;
+  justify-content: center;
+}
+
+.banner h1 {
+  position: relative;
+  bottom: 48px;
+  font-size: 3.6em;
+  width: 70%;
+}
+
+.banner h2 {
+  position: relative;
+  bottom: 48px;
+  font-size: 2.2em;
+  width: 70%;
+}
+
+.start-button {
+  display: flex;
+  background-color: hsl(360, 0%, 50%);
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.start-button span {
+  padding: 8px 0;
+  color: white;
+  font-size: 2em;
+}
+
+/*Information*/
+.information {
+  display: flex;
+  background-color: hsl(360, 0%, 90%)
+}
+
+@media only screen and (max-width: 480px) {
+  .information {
+    width: 100%;
+    flex-flow: column;
+  }
+}
+
+.information .left-box h1 {
+  display: block;
+  font-size: 3.6em;
+  padding: 0;
+  margin: 32px 0 24px 0;
+}
+
+.information .left-box p {
+  font-size: 1.85em;
+  margin: 0;
+}
+
+h6 {
+  font-weight: 450;
+  font-size: 1.65em;
+  margin: 24px 0 0 0;
+}
+
+.information .right-box {
+  padding: 16px 0 0 0;
+  border-left: 1px dashed hsl(360, 0%, 60%);
+}
+.box {
+  display: flex;
+  border-bottom: 1px dashed hsl(360, 0%, 60%);
+}
+
+@media only screen and (max-width: 480px) {
+.box {
+  flex-flow: column;
+  width: 100%
+  }
+}
+
+.box img {
+  padding: 16px;
+  width: 35%;
+}
+
+@media only screen and (max-width: 480px) {
+  .box img {
+      width: 150%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+  .mobile {
+      display: none;
+  }
+}
+
+.box-text {
+  display: flex;
+  position: relative;
+  left: 24px;
+  flex-flow: column;
+  width: 65%;
+  justify-content: center;
+}
+
+.box-text h1 {
+  margin: 0;
+  padding: 4px 0;
+  font-size: 2.6em;
+}
+
+.box-text p {
+  margin: 0;
+  padding: 4px 0;
+  font-size: 1.65em;
+}
+
+.box-text a {
+  margin: 0;
+  padding: 4px 0;
+  text-decoration: none;
+  font-size: 1.65em;
+  color: blue;
+}
+
+.grey {
+  border: none;
+}
+
+/*Courses*/
+.course {
+  background-color: hsl(360, 0%, 80%);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: 3.6em;
+  display: block;
+  padding: 0;
+  margin: 32px 0 16px 0;
+}
+
+.big-box {
+  margin: 0 72px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.image-box {
+  display: flex;
+  flex-flow: column;
+  margin: 16px 0;
+  background-color: hsl(360, 0%, 90%);
+}
+
+@media only screen and (min-width: 481px) {
+  .image-box {
+    width: 30%;
+  }
+}
+
+.image-box img {
+  height: auto;
+}
+
+.image-box h2 {
+  margin: 0;
+  padding: 16px 16px;
+  font-size: 2.2em;
+}
+
+.image-box a {
+  padding: 8px 16px;
+  font-size: 1.4em;
+}
+
+.image-box p {
+  overflow: wrap;
+  font-size: 1.4em;
+  padding: 0 16px 24px 16px;
+}
+
+/*Thesis*/
+
+.thesis {
+  display: flex;
+  flex-flow: column;
+  background-color: hsl(360, 0%, 90%);
+  margin: 0;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+}
+
+.container2 {
+  display: flex;
+}
+
+.thesis .right-box {
+  margin-top: 32px;
+}
+
+.thesis .left-box h1 {
+  display: block;
+  font-size: 3.6em;
+  padding: 0;
+  margin: 32px 0 24px 0;
+}
+
+.thesis .left-box p {
+  font-size: 1.85em;
+  margin: 0;
+}
+
+/*Footer*/
+
+footer {
+  position: relative;
+  top: 48px;
+}
+
+footer .content {
+  border-top: 1px dashed hsl(360, 0%, 60%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 24px;
+  background-color: hsl(360, 0%, 90%);
+  align-items: center;
+}
+
+footer a {
+  margin: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: hsl(360, 0%, 50%);
+}
+
+/*Media Queries*/
+
+  /*Desktop*/
+@media only screen and (min-width: 481px) {
+  .mobile {
+    display: none;
+  }
+}
+
+  /*Mobile*/
+@media only screen and (max-width: 480px) {
+  .desktop {
+    display: none;
+}
+
+  .right-box {
+    width: 100%;
+  }
+
+  .fixed {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+  }
+
+  .mobile.nav {
+    background-color: white;
+    display: flex;
+    height: 64px;
+  }
+
+  .mobile.nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .mobile.nav ul li {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile.nav img {
+    height: 44px;
+    width: auto;
+  }
+
+  .banner {
+    width: 100%;
+    flex-flow: column;
+  }
+
+  .banner.left-box {
+    min-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .banner.right-box {
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner h1 {
+    font-size: 2.2em;
+    padding: 32px 16px;
+    margin: 0;
+  }
+
+  .banner h2 {
+    margin: 0;
+    font-size: 1.8em;
+    padding: 0px 16px;
+  }
+
+  .course {
+    border-top: 1px dashed hsl(360, 0%, 80%);
+    background-color: hsl(360, 0%, 90%); width: 100%;
+    flex-flow: column;
+  }
+
+  .big-box {
+    flex-flow: column wrap;
+    width: 100%;
+    align-items: center;
+  }
+
+  .image-box {
+    background-color: hsl(360, 0%, 80%);
+    margin: 8px;
+    display: flex;
+    width: 90%;
+  }
+
+  .image-box a, .image-box p, .container2 h1, .container2 p  {
+    display: none;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  body {
+    background-color: hsl(360, 0%, 90%);
+  }
+}
